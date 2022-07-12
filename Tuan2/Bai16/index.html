@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../Scripts/jquery-3.6.0.min.js"></script>
+    <title>Bai16</title>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+
+        </div>
+        <div class="content">
+            <div class="left-box">
+                <table>
+                    <tr class="header-table">
+                        <th colspan="2">Bảng tin thị trường</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Vàng</th>
+                    </tr>
+                    <tr class="title-table">
+                        <td>Mua vào</td>
+                        <td>Bán ra</td>
+                    </tr>
+                    <tr id="gold">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">USD</th>
+                    </tr>
+                    <tr class="title-table">
+                        <td>Mua vào</td>
+                        <td>Bán ra</td>
+                    </tr>
+                    <tr id="usd">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center-box">
+                <table>
+                    <tr class="header-table">
+                        <th colspan="2">Cập nhật giá cả thị trường</th>
+                    </tr>
+                    <tr>
+                        <td>Mua vào</td>
+                        <td><input id="input-buy" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Bán ra</td>
+                        <td><input id="input-sold" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Loại xe</td>
+                        <td>
+                            <select name="select-menu" id="select-menu">
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="box">
+                            <input value="1" type="radio" name="type">
+                            <label for="type"> Vàng</label>
+                            <input value="0" type="radio" name="type">
+                            <label for="type"> USD</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button id="button-update" class="btn">Update</button>
+                            <!-- <button class="btn">State</button> -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right-box">
+                <table>
+                    <tr class="header-table">
+                        <th>Bảng báo giá</th>
+                    </tr>
+                    <tr class="desciption">
+                        <td></td>
+                    </tr>
+                    <tr class="car-image">
+                        <td>
+                            <img id="image">
+                        </td>
+                    </tr>
+                    <tr id="price">
+                        <td>Giá: </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

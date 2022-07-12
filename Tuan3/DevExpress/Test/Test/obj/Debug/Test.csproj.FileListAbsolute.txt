@@ -1,0 +1,7 @@
+F:\ThucTap\Tuan3\DevExpress\Test\Test\bin\Debug\Test.exe.config
+F:\ThucTap\Tuan3\DevExpress\Test\Test\bin\Debug\Test.exe
+F:\ThucTap\Tuan3\DevExpress\Test\Test\bin\Debug\Test.pdb
+F:\ThucTap\Tuan3\DevExpress\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+F:\ThucTap\Tuan3\DevExpress\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\ThucTap\Tuan3\DevExpress\Test\Test\obj\Debug\Test.exe
+F:\ThucTap\Tuan3\DevExpress\Test\Test\obj\Debug\Test.pdb

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <div style="text-align:center";>
+        <table border="1" width="70%" style="color:chocolate" id="Cartbl">
+            <tr>
+                <td>
+                    <input id="btnget" type="button" onclick="GetAllCar();" value="Get_Data"/>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    function GetAllCar() {
+        $.ajax({
+            type: "GET",
+            url: "http://web.api/api/CarDetails", //URI
+
+            dataType: "json",
+            success: function (data) {
+                //debugger;
+                var datavalue = data;
+                var myJsonObject = datavalue;
+                contentType: "application/json";
+                $.each(myJsonObject, function (i, mobj) {
+                    $("#Cartbl").append('<tr><td width="50px">' + mobj.Name +
+                        '</td><td width="50px">' + mobj.Model +
+                        '</td><td width="50px">' + mobj.Price +
+                        '</td>' + '</td><td width="50px">'
+                        + mobj.Color + '</td></tr>');
+
+                });
+
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    }
+</script>

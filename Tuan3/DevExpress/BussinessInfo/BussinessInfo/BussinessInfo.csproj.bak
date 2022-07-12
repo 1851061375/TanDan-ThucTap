@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BCDF89C-BED6-4F9E-8071-BA2945603CE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BussinessInfo</RootNamespace>
+    <AssemblyName>BussinessInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.7.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.7\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IronOcr, Version=4.4.0.21181, Culture=neutral, PublicKeyToken=5f366048dc436899, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronOcr.4.4.0\lib\net40\IronOcr.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dapper\BaseAPI.cs" />
+    <Compile Include="Dapper\DMCoQuanRepos.cs" />
+    <Compile Include="Dapper\DMDoanhNghiepTrucThuocRepos.cs" />
+    <Compile Include="Dapper\DMTagRepos.cs" />
+    <Compile Include="Dapper\DMNganHangRepos.cs" />
+    <Compile Include="Dapper\DMNganhNgheRepos.cs" />
+    <Compile Include="Dapper\DMSanPhamRepos.cs" />
+    <Compile Include="Dapper\DMQuanHuyenRepos.cs" />
+    <Compile Include="Dapper\DMPhuongXaRepos.cs" />
+    <Compile Include="Dapper\DMThuePhaiNopRepos.cs" />
+    <Compile Include="Dapper\DMDiaBanRepos.cs" />
+    <Compile Include="Dapper\DMTinhThanhRepos.cs" />
+    <Compile Include="Dapper\DNDoanhNghiepTrucThuocRepos.cs" />
+    <Compile Include="Dapper\DNNganHangRepos.cs" />
+    <Compile Include="Dapper\DNTagRepos.cs" />
+    <Compile Include="Dapper\DNNganhNgheRepos.cs" />
+    <Compile Include="Dapper\DNSanPhamRepos.cs" />
+    <Compile Include="Dapper\DNThuePhaiNopRepos.cs" />
+    <Compile Include="Dapper\DoanhNghiepRepos.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="demo.Designer.cs">
+      <DependentUpon>demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906110313132_InitialCreate.cs" />
+    <Compile Include="Migrations\201906110313132_InitialCreate.Designer.cs">
+      <DependentUpon>201906110313132_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906110415543_Update_MaLength.cs" />
+    <Compile Include="Migrations\201906110415543_Update_MaLength.Designer.cs">
+      <DependentUpon>201906110415543_Update_MaLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906110841229_Update_DNDoanhNghiepTrucThuoc.cs" />
+    <Compile Include="Migrations\201906110841229_Update_DNDoanhNghiepTrucThuoc.Designer.cs">
+      <DependentUpon>201906110841229_Update_DNDoanhNghiepTrucThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906110848227_Update_DNDoanhNghiepTrucThuoc_2.cs" />
+    <Compile Include="Migrations\201906110848227_Update_DNDoanhNghiepTrucThuoc_2.Designer.cs">
+      <DependentUpon>201906110848227_Update_DNDoanhNghiepTrucThuoc_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906120903137_update_NameEnglishToVietNamese.cs" />
+    <Compile Include="Migrations\201906120903137_update_NameEnglishToVietNamese.Designer.cs">
+      <DependentUpon>201906120903137_update_NameEnglishToVietNamese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906131520247_Re_update.cs" />
+    <Compile Include="Migrations\201906131520247_Re_update.Designer.cs">
+      <DependentUpon>201906131520247_Re_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906170835446_add_DMDiaBan.cs" />
+    <Compile Include="Migrations\201906170835446_add_DMDiaBan.Designer.cs">
+      <DependentUpon>201906170835446_add_DMDiaBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906170841226_add_DMDiaBan2.cs" />
+    <Compile Include="Migrations\201906170841226_add_DMDiaBan2.Designer.cs">
+      <DependentUpon>201906170841226_add_DMDiaBan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906170950310_update_DMDiaBan.cs" />
+    <Compile Include="Migrations\201906170950310_update_DMDiaBan.Designer.cs">
+      <DependentUpon>201906170950310_update_DMDiaBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906171228540_update_DMDiaBan3.cs" />
+    <Compile Include="Migrations\201906171228540_update_DMDiaBan3.Designer.cs">
+      <DependentUpon>201906171228540_update_DMDiaBan3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906180318286_add_columnCreateUpdate.cs" />
+    <Compile Include="Migrations\201906180318286_add_columnCreateUpdate.Designer.cs">
+      <DependentUpon>201906180318286_add_columnCreateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906180343238_updateColumn.cs" />
+    <Compile Include="Migrations\201906180343238_updateColumn.Designer.cs">
+      <DependentUpon>201906180343238_updateColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906190711394_big_update_database.cs" />
+    <Compile Include="Migrations\201906190711394_big_update_database.Designer.cs">
+      <DependentUpon>201906190711394_big_update_database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906190841293_big_update_database2.cs" />
+    <Compile Include="Migrations\201906190841293_big_update_database2.Designer.cs">
+      <DependentUpon>201906190841293_big_update_database2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906240705493_Add_DMTag.cs" />
+    <Compile Include="Migrations\201906240705493_Add_DMTag.Designer.cs">
+      <DependentUpon>201906240705493_Add_DMTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907040712030_Update_FindReturnID.cs" />
+    <Compile Include="Migrations\201907040712030_Update_FindReturnID.Designer.cs">
+      <DependentUpon>201907040712030_Update_FindReturnID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907050220588_Add_DMDoanhNghiepTrucThuoc.cs" />
+    <Compile Include="Migrations\201907050220588_Add_DMDoanhNghiepTrucThuoc.Designer.cs">
+      <DependentUpon>201907050220588_Add_DMDoanhNghiepTrucThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907050239160_Add_DMDoanhNghiepTrucThuoc1.cs" />
+    <Compile Include="Migrations\201907050239160_Add_DMDoanhNghiepTrucThuoc1.Designer.cs">
+      <DependentUpon>201907050239160_Add_DMDoanhNghiepTrucThuoc1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907050242055_Add_DMDoanhNghiepTrucThuoc2.cs" />
+    <Compile Include="Migrations\201907050242055_Add_DMDoanhNghiepTrucThuoc2.Designer.cs">
+      <DependentUpon>201907050242055_Add_DMDoanhNghiepTrucThuoc2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\DMCoQuan.cs" />
+    <Compile Include="Models\DMNganHang.cs" />
+    <Compile Include="Models\DMTag.cs" />
+    <Compile Include="Models\DMNganhNghe.cs" />
+    <Compile Include="Models\DMDiaBan.cs" />
+    <Compile Include="Models\DMPhuongXa.cs" />
+    <Compile Include="Models\DMQuanHuyen.cs" />
+    <Compile Include="Models\DMSanPham.cs" />
+    <Compile Include="Models\DMDoanhNghiepTrucThuoc.cs" />
+    <Compile Include="Models\DMThuePhaiNop.cs" />
+    <Compile Include="Models\DMTinhThanh.cs" />
+    <Compile Include="Models\DNNganHang.cs" />
+    <Compile Include="Models\DNTag.cs" />
+    <Compile Include="Models\DNNganhNghe.cs" />
+    <Compile Include="Models\DNDoanhNghiepTrucThuoc.cs" />
+    <Compile Include="Models\DNSanPham.cs" />
+    <Compile Include="Models\DNThuePhaiNop.cs" />
+    <Compile Include="Models\DoanhNghiep.cs" />
+    <Compile Include="Models\Overrides\DMDiaBan.cs" />
+    <Compile Include="Models\Overrides\DoanhNghiep.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\TTDNPage.cs" />
+    <Compile Include="Web\ThongTinDoanhNghiepPage.cs" />
+    <Compile Include="Web\YellowPages.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="demo.resx">
+      <DependentUpon>demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906110313132_InitialCreate.resx">
+      <DependentUpon>201906110313132_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906110415543_Update_MaLength.resx">
+      <DependentUpon>201906110415543_Update_MaLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906110841229_Update_DNDoanhNghiepTrucThuoc.resx">
+      <DependentUpon>201906110841229_Update_DNDoanhNghiepTrucThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906110848227_Update_DNDoanhNghiepTrucThuoc_2.resx">
+      <DependentUpon>201906110848227_Update_DNDoanhNghiepTrucThuoc_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906120903137_update_NameEnglishToVietNamese.resx">
+      <DependentUpon>201906120903137_update_NameEnglishToVietNamese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906131520247_Re_update.resx">
+      <DependentUpon>201906131520247_Re_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906170835446_add_DMDiaBan.resx">
+      <DependentUpon>201906170835446_add_DMDiaBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906170841226_add_DMDiaBan2.resx">
+      <DependentUpon>201906170841226_add_DMDiaBan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906170950310_update_DMDiaBan.resx">
+      <DependentUpon>201906170950310_update_DMDiaBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906171228540_update_DMDiaBan3.resx">
+      <DependentUpon>201906171228540_update_DMDiaBan3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906180318286_add_columnCreateUpdate.resx">
+      <DependentUpon>201906180318286_add_columnCreateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906180343238_updateColumn.resx">
+      <DependentUpon>201906180343238_updateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906190711394_big_update_database.resx">
+      <DependentUpon>201906190711394_big_update_database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906190841293_big_update_database2.resx">
+      <DependentUpon>201906190841293_big_update_database2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906240705493_Add_DMTag.resx">
+      <DependentUpon>201906240705493_Add_DMTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907040712030_Update_FindReturnID.resx">
+      <DependentUpon>201907040712030_Update_FindReturnID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907050220588_Add_DMDoanhNghiepTrucThuoc.resx">
+      <DependentUpon>201907050220588_Add_DMDoanhNghiepTrucThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907050239160_Add_DMDoanhNghiepTrucThuoc1.resx">
+      <DependentUpon>201907050239160_Add_DMDoanhNghiepTrucThuoc1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907050242055_Add_DMDoanhNghiepTrucThuoc2.resx">
+      <DependentUpon>201907050242055_Add_DMDoanhNghiepTrucThuoc2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

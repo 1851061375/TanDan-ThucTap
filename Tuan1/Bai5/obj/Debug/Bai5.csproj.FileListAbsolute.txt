@@ -1,0 +1,13 @@
+F:\Downloads\Tuan1\Bai5\bin\Debug\Bai5.exe.config
+F:\Downloads\Tuan1\Bai5\bin\Debug\Bai5.exe
+F:\Downloads\Tuan1\Bai5\bin\Debug\Bai5.pdb
+F:\Downloads\Tuan1\Bai5\obj\Debug\Bai5.csproj.CoreCompileInputs.cache
+F:\Downloads\Tuan1\Bai5\obj\Debug\Bai5.exe
+F:\Downloads\Tuan1\Bai5\obj\Debug\Bai5.pdb
+F:\ThucTap\Tuan1\Bai5\bin\Debug\Bai5.exe.config
+F:\ThucTap\Tuan1\Bai5\bin\Debug\Bai5.exe
+F:\ThucTap\Tuan1\Bai5\bin\Debug\Bai5.pdb
+F:\ThucTap\Tuan1\Bai5\obj\Debug\Bai5.csproj.AssemblyReference.cache
+F:\ThucTap\Tuan1\Bai5\obj\Debug\Bai5.csproj.CoreCompileInputs.cache
+F:\ThucTap\Tuan1\Bai5\obj\Debug\Bai5.exe
+F:\ThucTap\Tuan1\Bai5\obj\Debug\Bai5.pdb

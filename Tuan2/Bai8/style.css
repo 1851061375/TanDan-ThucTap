@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+}
+
+.header {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.input-number {
+    margin-bottom: 4px;
+}
+
+.input-number input {
+    outline: none;
+}
+
+#result {
+    margin-left: 40px;
+}
+
+.btn {
+    cursor: pointer;
+}

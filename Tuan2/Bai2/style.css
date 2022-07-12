@@ -1,0 +1,30 @@
+.container table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.container table {
+    width: 400px;
+    column-count: 3;
+}
+
+#table-student-list {
+    font-size: 25px;
+    color: #f8a1a1;
+    text-transform: uppercase;
+    background: #e8e8e8;
+}
+
+#table-header {
+    background: #fcf9f9;
+}
+
+#table-content td {
+    height: 28px;
+    width: 133px;
+}
+
+#table-content td p{
+    margin: 4px;
+}

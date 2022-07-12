@@ -1,0 +1,13 @@
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\Test.exe.config
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\Test.exe
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\Test.pdb
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\HtmlAgilityPack.dll
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\HtmlAgilityPack.pdb
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\HtmlAgilityPack.xml
+F:\ThucTap\Tuan3\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+F:\ThucTap\Tuan3\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\ThucTap\Tuan3\Test\Test\obj\Debug\Test.csproj.CopyComplete
+F:\ThucTap\Tuan3\Test\Test\obj\Debug\Test.exe
+F:\ThucTap\Tuan3\Test\Test\obj\Debug\Test.pdb
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\Newtonsoft.Json.dll
+F:\ThucTap\Tuan3\Test\Test\bin\Debug\Newtonsoft.Json.xml

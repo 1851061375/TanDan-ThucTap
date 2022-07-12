@@ -1,0 +1,150 @@
+namespace BussinessInfo.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class big_update_database : DbMigration
+    {
+        public override void Up()
+        {
+            AddColumn("dbo.DoanhNghiep", "Title", c => c.String(nullable: false, maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "Created", c => c.DateTime());
+            AddColumn("dbo.DoanhNghiep", "Updated", c => c.DateTime());
+            AddColumn("dbo.DoanhNghiep", "NgayCap", c => c.DateTime());
+            AddColumn("dbo.DoanhNghiep", "TitleEn", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "DiaChiCongTy", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "MaSoHienThoi", c => c.String(maxLength: 20));
+            AddColumn("dbo.DoanhNghiep", "GiamDoc_DiaChi", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "KeToanTruong_DiaChi", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "ExitsInGDT", c => c.Boolean());
+            AddColumn("dbo.DoanhNghiep", "TinhThanhTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "TinhThanhTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "QuanHuyenTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "QuanHuyenTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "PhuongXaTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "PhuongXaTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_CoQuanTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_CoQuanTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_DienThoai", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_Fax", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiNopThue_DienThoai", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiNopThue_Fax", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiNopThue_CoQuanTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NoiNopThue_CoQuanTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_NgayCap", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_CoQuanCapID", c => c.Int());
+            AddColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_CoQuanCapTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_CoQuanCapTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "GiayPhepKinhDoanh_CoQuanCapTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "GiayPhepKinhDoanh_CoQuanCapTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "LoaiHinhID", c => c.Int());
+            AddColumn("dbo.DoanhNghiep", "LoaiHinhTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "LoaiHinhTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NganhNgheID", c => c.Int());
+            AddColumn("dbo.DoanhNghiep", "NganhNgheTitle", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "NganhNgheTitleAscii", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "Lv1", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "Lv2", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "Lv3", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "Lv4", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "Lv5", c => c.String());
+            AlterColumn("dbo.DMTinhThanh", "Ma", c => c.String(maxLength: 20));
+            AlterColumn("dbo.DoanhNghiep", "TinhThanhID", c => c.Int(nullable: false));
+            AlterColumn("dbo.DoanhNghiep", "MaSoThue", c => c.String(maxLength: 20));
+            AlterColumn("dbo.DoanhNghiep", "ChuSoHuu", c => c.String(maxLength: 50));
+            AlterColumn("dbo.DoanhNghiep", "GiamDoc", c => c.String(maxLength: 50));
+            AlterColumn("dbo.DoanhNghiep", "KeToanTruong", c => c.String(maxLength: 50));
+            AlterColumn("dbo.DoanhNghiep", "GiayPhepKinhDoanh", c => c.String());
+            AlterColumn("dbo.DoanhNghiep", "QuanHuyenID", c => c.Int(nullable: false));
+            AlterColumn("dbo.DoanhNghiep", "PhuongXaID", c => c.Int(nullable: false));
+            DropColumn("dbo.DoanhNghiep", "Ten");
+            DropColumn("dbo.DoanhNghiep", "DiaChi");
+            DropColumn("dbo.DoanhNghiep", "SoDienThoai");
+            DropColumn("dbo.DoanhNghiep", "Fax");
+            DropColumn("dbo.DoanhNghiep", "Email");
+            DropColumn("dbo.DoanhNghiep", "Web");
+            DropColumn("dbo.DoanhNghiep", "TrangThai");
+            DropColumn("dbo.DoanhNghiep", "TenEn");
+            DropColumn("dbo.DoanhNghiep", "NgayCapMST");
+            DropColumn("dbo.DoanhNghiep", "SDTGiamDoc");
+            DropColumn("dbo.DoanhNghiep", "EmailGiamDoc");
+            DropColumn("dbo.DoanhNghiep", "DiaChiGiamDoc");
+            DropColumn("dbo.DoanhNghiep", "SDTKeToanTruong");
+            DropColumn("dbo.DoanhNghiep", "EmailKeToanTruong");
+            DropColumn("dbo.DoanhNghiep", "DiaChiKeToanTruong");
+            DropColumn("dbo.DoanhNghiep", "NganhNgheKinhDoanhChinhId");
+        }
+        
+        public override void Down()
+        {
+            AddColumn("dbo.DoanhNghiep", "NganhNgheKinhDoanhChinhId", c => c.Int());
+            AddColumn("dbo.DoanhNghiep", "DiaChiKeToanTruong", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "EmailKeToanTruong", c => c.String(maxLength: 50));
+            AddColumn("dbo.DoanhNghiep", "SDTKeToanTruong", c => c.String(maxLength: 20));
+            AddColumn("dbo.DoanhNghiep", "DiaChiGiamDoc", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "EmailGiamDoc", c => c.String(maxLength: 50, fixedLength: true));
+            AddColumn("dbo.DoanhNghiep", "SDTGiamDoc", c => c.String(maxLength: 20, fixedLength: true));
+            AddColumn("dbo.DoanhNghiep", "NgayCapMST", c => c.DateTime());
+            AddColumn("dbo.DoanhNghiep", "TenEn", c => c.String());
+            AddColumn("dbo.DoanhNghiep", "TrangThai", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "Web", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "Email", c => c.String(maxLength: 50, fixedLength: true));
+            AddColumn("dbo.DoanhNghiep", "Fax", c => c.String(maxLength: 50, fixedLength: true));
+            AddColumn("dbo.DoanhNghiep", "SoDienThoai", c => c.String(maxLength: 50, fixedLength: true));
+            AddColumn("dbo.DoanhNghiep", "DiaChi", c => c.String(maxLength: 100));
+            AddColumn("dbo.DoanhNghiep", "Ten", c => c.String(nullable: false, maxLength: 100));
+            AlterColumn("dbo.DoanhNghiep", "PhuongXaID", c => c.Int());
+            AlterColumn("dbo.DoanhNghiep", "QuanHuyenID", c => c.Int());
+            AlterColumn("dbo.DoanhNghiep", "GiayPhepKinhDoanh", c => c.String(maxLength: 20));
+            AlterColumn("dbo.DoanhNghiep", "KeToanTruong", c => c.String(maxLength: 100));
+            AlterColumn("dbo.DoanhNghiep", "GiamDoc", c => c.String(maxLength: 100, unicode: false));
+            AlterColumn("dbo.DoanhNghiep", "ChuSoHuu", c => c.String(maxLength: 100));
+            AlterColumn("dbo.DoanhNghiep", "MaSoThue", c => c.String(maxLength: 100));
+            AlterColumn("dbo.DoanhNghiep", "TinhThanhID", c => c.Int());
+            AlterColumn("dbo.DMTinhThanh", "Ma", c => c.String(maxLength: 20, fixedLength: true));
+            DropColumn("dbo.DoanhNghiep", "Lv5");
+            DropColumn("dbo.DoanhNghiep", "Lv4");
+            DropColumn("dbo.DoanhNghiep", "Lv3");
+            DropColumn("dbo.DoanhNghiep", "Lv2");
+            DropColumn("dbo.DoanhNghiep", "Lv1");
+            DropColumn("dbo.DoanhNghiep", "NganhNgheTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "NganhNgheTitle");
+            DropColumn("dbo.DoanhNghiep", "NganhNgheID");
+            DropColumn("dbo.DoanhNghiep", "LoaiHinhTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "LoaiHinhTitle");
+            DropColumn("dbo.DoanhNghiep", "LoaiHinhID");
+            DropColumn("dbo.DoanhNghiep", "GiayPhepKinhDoanh_CoQuanCapTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "GiayPhepKinhDoanh_CoQuanCapTitle");
+            DropColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_CoQuanCapTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_CoQuanCapTitle");
+            DropColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_CoQuanCapID");
+            DropColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap_NgayCap");
+            DropColumn("dbo.DoanhNghiep", "QuyetDinhThanhLap");
+            DropColumn("dbo.DoanhNghiep", "NoiNopThue_CoQuanTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "NoiNopThue_CoQuanTitle");
+            DropColumn("dbo.DoanhNghiep", "NoiNopThue_Fax");
+            DropColumn("dbo.DoanhNghiep", "NoiNopThue_DienThoai");
+            DropColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_Fax");
+            DropColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_DienThoai");
+            DropColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_CoQuanTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "NoiDangKyQuanLy_CoQuanTitle");
+            DropColumn("dbo.DoanhNghiep", "PhuongXaTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "PhuongXaTitle");
+            DropColumn("dbo.DoanhNghiep", "QuanHuyenTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "QuanHuyenTitle");
+            DropColumn("dbo.DoanhNghiep", "TinhThanhTitleAscii");
+            DropColumn("dbo.DoanhNghiep", "TinhThanhTitle");
+            DropColumn("dbo.DoanhNghiep", "ExitsInGDT");
+            DropColumn("dbo.DoanhNghiep", "KeToanTruong_DiaChi");
+            DropColumn("dbo.DoanhNghiep", "GiamDoc_DiaChi");
+            DropColumn("dbo.DoanhNghiep", "MaSoHienThoi");
+            DropColumn("dbo.DoanhNghiep", "DiaChiCongTy");
+            DropColumn("dbo.DoanhNghiep", "TitleEn");
+            DropColumn("dbo.DoanhNghiep", "NgayCap");
+            DropColumn("dbo.DoanhNghiep", "Updated");
+            DropColumn("dbo.DoanhNghiep", "Created");
+            DropColumn("dbo.DoanhNghiep", "Title");
+        }
+    }
+}

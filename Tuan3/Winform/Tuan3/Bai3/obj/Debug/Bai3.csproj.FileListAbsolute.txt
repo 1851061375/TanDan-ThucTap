@@ -1,0 +1,10 @@
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\bin\Debug\Bai3.exe.config
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\bin\Debug\Bai3.exe
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\bin\Debug\Bai3.pdb
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.Form1.resources
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.Properties.Resources.resources
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.csproj.GenerateResource.cache
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.csproj.CoreCompileInputs.cache
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.exe
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.pdb
+F:\ThucTap\Tuan3\Winform\Tuan3\Bai3\obj\Debug\Bai3.csproj.AssemblyReference.cache

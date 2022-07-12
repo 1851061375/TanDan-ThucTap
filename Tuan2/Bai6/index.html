@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="/Scripts/jquery-3.6.0.min.js"></script>
+    <title>Bai6</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-up-form">
+            <table>
+                <tr class="table-name">
+                    <th colspan="3">Thông tin đăng ký</th>
+                </tr>
+                <tr class="table-content">
+                    <td class="label">Họ tên</td>
+                    <td>
+                        <input id="full-name" name="fullName" type="text">                       
+                    </td>
+                </tr>
+                <tr class="table-content">
+                    <td class="label">Mật khẩu</td>
+                    <td>
+                        <input id="password" name="password" type="password">
+                    </td>
+                </tr>
+                <tr class="table-content">
+                    <td></td>
+                    <td>
+                        <input id="submit" name="submit" type="submit" value="Nhập">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="message">
+            <p id="message-full-name"></p>
+            <p id="message-password"></p>         
+        </div>
+
+        <div class="sign-in-info">
+            <table>
+                <tr class="table-name">
+                    <th colspan="3">Thông tin đăng nhập</th>
+                </tr>
+                <tr class="table-content">
+                    <td class="label">Họ tên</td>
+                    <td class="table-content">
+                        <p id="sign-in-full-name"></p>
+                    </td>
+                </tr>
+                <tr class="table-content">
+                    <td class="label">Mật khẩu</td>
+                    <td>
+                        <p id="sign-in-password"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
